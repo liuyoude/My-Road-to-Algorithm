@@ -1,0 +1,182 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/602318 (zh-CN, DDL); Windows/10.0.0 (Win64); EDAMVersion=V2;"/>
+  <meta name="content-class" content="yinxiang.markdown"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="809"/>
+
+<div><span><div style="font-size: 14px; margin: 0; padding: 0; width: 100%;"><h3 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 27px; color: #333;">My Road To Algorithm</h3>
+<div style="line-height: 160%; box-sizing: content-box;"><ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333;"><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">My Road To Algorithm
+</a><ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;"><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">LeetCode
+</a><ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;"><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">46
+</a></li><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">53.最大子序列和
+</a><ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;"><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">解法1：贪心
+</a></li></ul></li><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">322.零钱兑换
+</a><ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;"><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">动态规划
+</a></li></ul></li><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">509.菲波那切数列
+</a><ul style="line-height: 160%; box-sizing: content-box; display: block; list-style-type: disc; padding-left: 30px; margin: 6px 0 10px; color: #333; margin-top: 0; margin-bottom: 0;"><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">解法1.自底向上 DP (动态规划思想)
+</a></li><li style="line-height: 160%; box-sizing: content-box; position: relative;"><a style="line-height: 160%; box-sizing: content-box; text-decoration: underline; color: #5286bc;">解法2.自上向下 带备忘录的递归
+</a></li></ul></li></ul></li></ul></li></ul></div><hr style="line-height: 160%; box-sizing: content-box; border-top: 1px solid #eee; margin: 16px 0;"/>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;">My Road To Algorithm</p>
+<h4 style="line-height: 160%; box-sizing: content-box; font-size: 20px; color: #333;">LeetCode</h4>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">46</h5>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">53.最大子序列和</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。<br/>
+示例:<br/>
+<strong style="line-height: 160%; box-sizing: content-box; font-weight: 700;">输入: [-2,1,-3,4,-1,2,1,-5,4]<br/>
+输出: 6<br/>
+解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。</strong><br/>
+进阶:<br/>
+如果你已经实现复杂度为 O(n) 的解法，尝试使用更为精妙的分治法求解。</p>
+</blockquote>
+<h6 style="line-height: 160%; box-sizing: content-box; font-size: 13px; color: #333;">解法1：贪心</h6>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;"><strong style="line-height: 160%; box-sizing: content-box; font-weight: 700;">如果之前序列和小于0就放弃之前序列</strong></p>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">class Solution {
+public:
+    int maxSubArray(vector&lt;int&gt;&amp; nums) {
+        int max_subsq_sum = nums[0], current_sum=0;
+        for(int i = 0; i &lt; nums.size(); i ++ ){
+            // 如果之前序列和小于等于0，放弃之前序列，将当前值设为新序列和
+            if(current_sum &lt;= 0){
+                current_sum = nums[i];
+            }else{
+            // 否则，将当前值和序列和相加作为新序列和
+                current_sum += nums[i];
+            }
+            // 如果新序列和的值大于最大序列值，将最大子序列值设为当前值
+            if(current_sum &gt; max_subsq_sum){
+                max_subsq_sum = current_sum;
+            }
+        }
+        return max_subsq_sum;
+    }
+};
+</code></pre>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">322.零钱兑换</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。<br/>
+你可以认为每种硬币的数量是无限的。<br/>
+示例 1：<br/>
+<strong style="line-height: 160%; box-sizing: content-box; font-weight: 700;">输入：coins = [1, 2, 5], amount = 11<br/>
+输出：3<br/>
+解释：11 = 5 + 5 + 1</strong><br/>
+提示：<br/>
+1 &lt;= coins.length &lt;= 12<br/>
+1 &lt;= coins[i] &lt;= 231 - 1<br/>
+0 &lt;= amount &lt;= 104</p>
+</blockquote>
+<h6 style="line-height: 160%; box-sizing: content-box; font-size: 13px; color: #333;">动态规划</h6>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;"><img src="My Road To Algorithm_files/Image.png" type="image/png" data-filename="Image.png"/></p>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;">备忘录：</p>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    int coinChange(vector&lt;int&gt;&amp; coins, int amount) {
+            vector&lt;int&gt; memo(amount+1, 0);
+            return solve(memo, coins, amount);
+            
+        }
+    int solve(vector&lt;int&gt;&amp; memo, vector&lt;int&gt;&amp; coins, int amount){
+        if(amount == 0) return 0;
+        if(amount &lt; 0 ) return -1;
+        if(memo[amount] != 0) return memo[amount];
+        int res = float('INF');
+        for(int i = 0; i &lt; coins.size(); i ++){
+            int subres = solve(memo, coins, amount-coins[i]);
+            if(subres == -1) continue;
+            if(subres+1 &lt; res){
+                res = subres+1;
+            }
+        }
+        if(res == float('INF')){
+            return -1;
+        }
+        memo[amount] = res;
+        return res;
+    }
+</code></pre>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;">dp数组：</p>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">int coinChange(vector&lt;int&gt;&amp; coins, int amount) {
+        vector&lt;int&gt; dp(amount+1, amount+1);
+        dp[0] = 0;
+        for(int i = 1; i &lt;= amount; i ++ ){
+            for(int j = 0; j &lt; coins.size(); j ++ ){
+                if(i - coins[j] &lt; 0) continue;
+                if(dp[i - coins[j]]+1 &lt; dp[i]){
+                    dp[i] = dp[i-coins[j]] + 1;
+                }
+            }
+        }
+        if (dp[amount] == amount + 1){
+            return -1;
+        }else{
+            return dp[amount];
+        }
+    }
+</code></pre>
+<h5 style="line-height: 160%; box-sizing: content-box; font-weight: 700; font-size: 16px; color: #333;">509.菲波那切数列</h5>
+<blockquote style="line-height: 160%; box-sizing: content-box; margin: 15px 0; border-left: 4px solid #ddd; padding: 0 15px; color: #777;">
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333; margin-top: 0; margin-bottom: 0;">斐波那契数，通常用 F(n) 表示，形成的序列称为斐波那契数列。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：<br/>
+F(0) = 0,   F(1) = 1<br/>
+F(N) = F(N - 1) + F(N - 2), 其中 N &gt; 1.<br/>
+给定 N，计算 F(N)。<br/>
+示例 1：<br/>
+<strong style="line-height: 160%; box-sizing: content-box; font-weight: 700;">输入：2<br/>
+输出：1<br/>
+解释：F(2) = F(1) + F(0) = 1 + 0 = 1.</strong><br/>
+提示：<br/>
+0 ≤ N ≤ 30</p>
+</blockquote>
+<h6 style="line-height: 160%; box-sizing: content-box; font-size: 13px; color: #333;">解法1.自底向上 DP (动态规划思想)</h6>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">class Solution {
+public:
+    int fib(int N) {
+        if(N &lt;= 1) return N;
+        vector&lt;int&gt; dp(N+1, 0);
+        dp[1] = 1;
+        // 记录之前所有状态值
+        for(int i = 2; i &lt;= N; i ++ ){
+            dp[i] = dp[i-1] + dp[i-2];
+        }
+        return dp[N];
+    }
+    
+    // 不需要存储所有状态，只需要存储前两个状态即可
+    int fib_mini(int N) {
+            if(N &lt;= 1) return N;
+            int pre = 0, cur = 1;
+            for(int i = 2; i &lt;= N; i ++ ){
+                int sum = pre + cur;
+                pre = cur;
+                cur = sum;
+            }
+            return cur;
+        }
+};
+</code></pre>
+<h6 style="line-height: 160%; box-sizing: content-box; font-size: 13px; color: #333;">解法2.自上向下 带备忘录的递归</h6>
+<p style="line-height: 160%; box-sizing: content-box; margin: 10px 0; color: #333;"><strong style="line-height: 160%; box-sizing: content-box; font-weight: 700;">可以直接通过递归解决，但这个过程中存在着大量重叠子问题，因此用备忘录存储重叠的子问题防止重复计算</strong></p>
+<pre style="line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; margin: 2px 0 8px; background-color: #f5f7f8;"><code style="display: block; overflow-x: auto; background: #1e1e1e; line-height: 160%; box-sizing: content-box; border: 0; border-radius: 0; letter-spacing: -.3px; padding: 18px; color: #f4f4f4; white-space: pre-wrap;">    int fib(int N) {
+            vector&lt;int&gt; memo(N+1, 0);
+            return helper(memo, N);
+        }
+    int helper(vector&lt;int&gt;&amp; memo, int N){
+        if(N == 0) return 0;
+        if(N == 1) return 1;
+        // 如果备忘录中存储， 就直接返回备忘录的值
+        if(memo[N] != 0) return memo[N];
+        // 否则记录在备忘录中
+        memo[N] = helper(memo, N-1) + helper(memo, N-2);
+        return memo[N];
+    }
+</code></pre>
+</div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23%23%23%20My%20Road%20To%20Algorithm%0A%5BTOC%5D%0A****************%0AMy%20Road%20To%20Algorithm%0A%23%23%23%23%20LeetCode%0A%0A%23%23%23%23%23%2046%0A%0A%23%23%23%23%23%2053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%88%97%E5%92%8C%0A%3E%20%E7%BB%99%E5%AE%9A%E4%B8%80%E4%B8%AA%E6%95%B4%E6%95%B0%E6%95%B0%E7%BB%84%20nums%C2%A0%EF%BC%8C%E6%89%BE%E5%88%B0%E4%B8%80%E4%B8%AA%E5%85%B7%E6%9C%89%E6%9C%80%E5%A4%A7%E5%92%8C%E7%9A%84%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%EF%BC%88%E5%AD%90%E6%95%B0%E7%BB%84%E6%9C%80%E5%B0%91%E5%8C%85%E5%90%AB%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%EF%BC%89%EF%BC%8C%E8%BF%94%E5%9B%9E%E5%85%B6%E6%9C%80%E5%A4%A7%E5%92%8C%E3%80%82%0A%E7%A4%BA%E4%BE%8B%3A%0A**%E8%BE%93%E5%85%A5%3A%20%5B-2%2C1%2C-3%2C4%2C-1%2C2%2C1%2C-5%2C4%5D%0A%E8%BE%93%E5%87%BA%3A%206%0A%E8%A7%A3%E9%87%8A%3A%C2%A0%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%C2%A0%5B4%2C-1%2C2%2C1%5D%20%E7%9A%84%E5%92%8C%E6%9C%80%E5%A4%A7%EF%BC%8C%E4%B8%BA%C2%A06%E3%80%82**%0A%E8%BF%9B%E9%98%B6%3A%0A%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%B7%B2%E7%BB%8F%E5%AE%9E%E7%8E%B0%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%BA%20O(n)%20%E7%9A%84%E8%A7%A3%E6%B3%95%EF%BC%8C%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8%E6%9B%B4%E4%B8%BA%E7%B2%BE%E5%A6%99%E7%9A%84%E5%88%86%E6%B2%BB%E6%B3%95%E6%B1%82%E8%A7%A3%E3%80%82%0A%0A%23%23%23%23%23%23%20%E8%A7%A3%E6%B3%951%EF%BC%9A%E8%B4%AA%E5%BF%83%0A**%E5%A6%82%E6%9E%9C%E4%B9%8B%E5%89%8D%E5%BA%8F%E5%88%97%E5%92%8C%E5%B0%8F%E4%BA%8E0%E5%B0%B1%E6%94%BE%E5%BC%83%E4%B9%8B%E5%89%8D%E5%BA%8F%E5%88%97**%0A%60%60%60%0Aclass%C2%A0Solution%C2%A0%7B%0Apublic%3A%0A%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0maxSubArray(vector%3Cint%3E%26%C2%A0nums)%C2%A0%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0max_subsq_sum%C2%A0%3D%C2%A0nums%5B0%5D%2C%C2%A0current_sum%3D0%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0for(int%C2%A0i%C2%A0%3D%C2%A00%3B%C2%A0i%C2%A0%3C%C2%A0nums.size()%3B%C2%A0i%C2%A0%2B%2B%C2%A0)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%E5%A6%82%E6%9E%9C%E4%B9%8B%E5%89%8D%E5%BA%8F%E5%88%97%E5%92%8C%E5%B0%8F%E4%BA%8E%E7%AD%89%E4%BA%8E0%EF%BC%8C%E6%94%BE%E5%BC%83%E4%B9%8B%E5%89%8D%E5%BA%8F%E5%88%97%EF%BC%8C%E5%B0%86%E5%BD%93%E5%89%8D%E5%80%BC%E8%AE%BE%E4%B8%BA%E6%96%B0%E5%BA%8F%E5%88%97%E5%92%8C%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(current_sum%C2%A0%3C%3D%C2%A00)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0current_sum%C2%A0%3D%C2%A0nums%5Bi%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7Delse%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%E5%90%A6%E5%88%99%EF%BC%8C%E5%B0%86%E5%BD%93%E5%89%8D%E5%80%BC%E5%92%8C%E5%BA%8F%E5%88%97%E5%92%8C%E7%9B%B8%E5%8A%A0%E4%BD%9C%E4%B8%BA%E6%96%B0%E5%BA%8F%E5%88%97%E5%92%8C%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0current_sum%C2%A0%2B%3D%C2%A0nums%5Bi%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20%E5%A6%82%E6%9E%9C%E6%96%B0%E5%BA%8F%E5%88%97%E5%92%8C%E7%9A%84%E5%80%BC%E5%A4%A7%E4%BA%8E%E6%9C%80%E5%A4%A7%E5%BA%8F%E5%88%97%E5%80%BC%EF%BC%8C%E5%B0%86%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%88%97%E5%80%BC%E8%AE%BE%E4%B8%BA%E5%BD%93%E5%89%8D%E5%80%BC%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(current_sum%C2%A0%3E%C2%A0max_subsq_sum)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0max_subsq_sum%C2%A0%3D%C2%A0current_sum%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0max_subsq_sum%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%7D%3B%0A%60%60%60%0A%0A%0A%23%23%23%23%23%20322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%0A%3E%20%E7%BB%99%E5%AE%9A%E4%B8%8D%E5%90%8C%E9%9D%A2%E9%A2%9D%E7%9A%84%E7%A1%AC%E5%B8%81%20coins%20%E5%92%8C%E4%B8%80%E4%B8%AA%E6%80%BB%E9%87%91%E9%A2%9D%20amount%E3%80%82%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E6%9D%A5%E8%AE%A1%E7%AE%97%E5%8F%AF%E4%BB%A5%E5%87%91%E6%88%90%E6%80%BB%E9%87%91%E9%A2%9D%E6%89%80%E9%9C%80%E7%9A%84%E6%9C%80%E5%B0%91%E7%9A%84%E7%A1%AC%E5%B8%81%E4%B8%AA%E6%95%B0%E3%80%82%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E4%B8%80%E7%A7%8D%E7%A1%AC%E5%B8%81%E7%BB%84%E5%90%88%E8%83%BD%E7%BB%84%E6%88%90%E6%80%BB%E9%87%91%E9%A2%9D%EF%BC%8C%E8%BF%94%E5%9B%9E%C2%A0-1%E3%80%82%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%AE%A4%E4%B8%BA%E6%AF%8F%E7%A7%8D%E7%A1%AC%E5%B8%81%E7%9A%84%E6%95%B0%E9%87%8F%E6%98%AF%E6%97%A0%E9%99%90%E7%9A%84%E3%80%82%0A%E7%A4%BA%E4%BE%8B%C2%A01%EF%BC%9A%0A**%E8%BE%93%E5%85%A5%EF%BC%9Acoins%20%3D%20%5B1%2C%202%2C%205%5D%2C%20amount%20%3D%2011%0A%E8%BE%93%E5%87%BA%EF%BC%9A3%20%0A%E8%A7%A3%E9%87%8A%EF%BC%9A11%20%3D%205%20%2B%205%20%2B%201**%0A%E6%8F%90%E7%A4%BA%EF%BC%9A%0A1%20%3C%3D%20coins.length%20%3C%3D%2012%0A1%20%3C%3D%20coins%5Bi%5D%20%3C%3D%20231%C2%A0-%201%0A0%20%3C%3D%20amount%20%3C%3D%20104%0A%0A%23%23%23%23%23%23%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%0A%0A%0A!%5B8f9a73637be237cab7d0682b2c8acf67.png%5D(en-resource%3A%2F%2Fdatabase%2F812%3A1)%0A%0A%E5%A4%87%E5%BF%98%E5%BD%95%EF%BC%9A%0A%60%60%60%0A%20%20%20%20int%C2%A0coinChange(vector%3Cint%3E%26%C2%A0coins%2C%C2%A0int%C2%A0amount)%C2%A0%7B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0vector%3Cint%3E%C2%A0memo(amount%2B1%2C%C2%A00)%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0solve(memo%2C%C2%A0coins%2C%C2%A0amount)%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0solve(vector%3Cint%3E%26%C2%A0memo%2C%C2%A0vector%3Cint%3E%26%C2%A0coins%2C%C2%A0int%C2%A0amount)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(amount%C2%A0%3D%3D%C2%A00)%C2%A0return%C2%A00%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(amount%C2%A0%3C%C2%A00%C2%A0)%C2%A0return%C2%A0-1%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(memo%5Bamount%5D%C2%A0!%3D%C2%A00)%C2%A0return%C2%A0memo%5Bamount%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0res%C2%A0%3D%C2%A0float('INF')%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0for(int%C2%A0i%C2%A0%3D%C2%A00%3B%C2%A0i%C2%A0%3C%C2%A0coins.size()%3B%C2%A0i%C2%A0%2B%2B)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0subres%C2%A0%3D%C2%A0solve(memo%2C%C2%A0coins%2C%C2%A0amount-coins%5Bi%5D)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(subres%C2%A0%3D%3D%C2%A0-1)%C2%A0continue%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(subres%2B1%C2%A0%3C%C2%A0res)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0res%C2%A0%3D%C2%A0subres%2B1%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(res%C2%A0%3D%3D%C2%A0float('INF'))%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0-1%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0memo%5Bamount%5D%C2%A0%3D%C2%A0res%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0res%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%60%60%60%0A%0Adp%E6%95%B0%E7%BB%84%EF%BC%9A%0A%60%60%60%0Aint%C2%A0coinChange(vector%3Cint%3E%26%C2%A0coins%2C%C2%A0int%C2%A0amount)%C2%A0%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0vector%3Cint%3E%C2%A0dp(amount%2B1%2C%C2%A0amount%2B1)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0dp%5B0%5D%C2%A0%3D%C2%A00%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0for(int%C2%A0i%C2%A0%3D%C2%A01%3B%C2%A0i%C2%A0%3C%3D%C2%A0amount%3B%C2%A0i%C2%A0%2B%2B%C2%A0)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0for(int%C2%A0j%C2%A0%3D%C2%A00%3B%C2%A0j%C2%A0%3C%C2%A0coins.size()%3B%C2%A0j%C2%A0%2B%2B%C2%A0)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(i%C2%A0-%C2%A0coins%5Bj%5D%C2%A0%3C%C2%A00)%C2%A0continue%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(dp%5Bi%C2%A0-%C2%A0coins%5Bj%5D%5D%2B1%C2%A0%3C%C2%A0dp%5Bi%5D)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0dp%5Bi%5D%C2%A0%3D%C2%A0dp%5Bi-coins%5Bj%5D%5D%C2%A0%2B%C2%A01%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if%C2%A0(dp%5Bamount%5D%C2%A0%3D%3D%C2%A0amount%C2%A0%2B%C2%A01)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0-1%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7Delse%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0dp%5Bamount%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%60%60%60%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%23%23%23%23%23%20509.%E8%8F%B2%E6%B3%A2%E9%82%A3%E5%88%87%E6%95%B0%E5%88%97%0A%0A%3E%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%EF%BC%8C%E9%80%9A%E5%B8%B8%E7%94%A8%C2%A0F(n)%20%E8%A1%A8%E7%A4%BA%EF%BC%8C%E5%BD%A2%E6%88%90%E7%9A%84%E5%BA%8F%E5%88%97%E7%A7%B0%E4%B8%BA%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E3%80%82%E8%AF%A5%E6%95%B0%E5%88%97%E7%94%B1%C2%A00%20%E5%92%8C%201%20%E5%BC%80%E5%A7%8B%EF%BC%8C%E5%90%8E%E9%9D%A2%E7%9A%84%E6%AF%8F%E4%B8%80%E9%A1%B9%E6%95%B0%E5%AD%97%E9%83%BD%E6%98%AF%E5%89%8D%E9%9D%A2%E4%B8%A4%E9%A1%B9%E6%95%B0%E5%AD%97%E7%9A%84%E5%92%8C%E3%80%82%E4%B9%9F%E5%B0%B1%E6%98%AF%EF%BC%9A%0AF(0)%20%3D%200%2C%C2%A0%20%C2%A0F(1)%C2%A0%3D%201%0AF(N)%20%3D%20F(N%20-%201)%20%2B%20F(N%20-%202)%2C%20%E5%85%B6%E4%B8%AD%20N%20%3E%201.%0A%E7%BB%99%E5%AE%9A%C2%A0N%EF%BC%8C%E8%AE%A1%E7%AE%97%C2%A0F(N)%E3%80%82%0A%E7%A4%BA%E4%BE%8B%201%EF%BC%9A%0A**%E8%BE%93%E5%85%A5%EF%BC%9A2%0A%E8%BE%93%E5%87%BA%EF%BC%9A1%0A%E8%A7%A3%E9%87%8A%EF%BC%9AF(2)%20%3D%20F(1)%20%2B%20F(0)%20%3D%201%20%2B%200%20%3D%201.**%0A%E6%8F%90%E7%A4%BA%EF%BC%9A%0A0%20%E2%89%A4%20N%20%E2%89%A4%2030%0A%0A%23%23%23%23%23%23%20%E8%A7%A3%E6%B3%951.%E8%87%AA%E5%BA%95%E5%90%91%E4%B8%8A%20DP%20(%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%9D%E6%83%B3)%0A%60%60%60%0Aclass%C2%A0Solution%C2%A0%7B%0Apublic%3A%0A%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0fib(int%C2%A0N)%C2%A0%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(N%C2%A0%3C%3D%C2%A01)%C2%A0return%C2%A0N%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0vector%3Cint%3E%C2%A0dp(N%2B1%2C%C2%A00)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0dp%5B1%5D%C2%A0%3D%C2%A01%3B%0A%20%20%20%20%20%20%20%20%2F%2F%20%E8%AE%B0%E5%BD%95%E4%B9%8B%E5%89%8D%E6%89%80%E6%9C%89%E7%8A%B6%E6%80%81%E5%80%BC%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0for(int%C2%A0i%C2%A0%3D%C2%A02%3B%C2%A0i%C2%A0%3C%3D%C2%A0N%3B%C2%A0i%C2%A0%2B%2B%C2%A0)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0dp%5Bi%5D%C2%A0%3D%C2%A0dp%5Bi-1%5D%C2%A0%2B%C2%A0dp%5Bi-2%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0dp%5BN%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%20%20%20%20%0A%20%20%20%20%2F%2F%20%E4%B8%8D%E9%9C%80%E8%A6%81%E5%AD%98%E5%82%A8%E6%89%80%E6%9C%89%E7%8A%B6%E6%80%81%EF%BC%8C%E5%8F%AA%E9%9C%80%E8%A6%81%E5%AD%98%E5%82%A8%E5%89%8D%E4%B8%A4%E4%B8%AA%E7%8A%B6%E6%80%81%E5%8D%B3%E5%8F%AF%0A%20%20%20%20int%C2%A0fib_mini(int%C2%A0N)%C2%A0%7B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(N%C2%A0%3C%3D%C2%A01)%C2%A0return%C2%A0N%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0pre%C2%A0%3D%C2%A00%2C%C2%A0cur%C2%A0%3D%C2%A01%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0for(int%C2%A0i%C2%A0%3D%C2%A02%3B%C2%A0i%C2%A0%3C%3D%C2%A0N%3B%C2%A0i%C2%A0%2B%2B%C2%A0)%7B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0sum%C2%A0%3D%C2%A0pre%C2%A0%2B%C2%A0cur%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0pre%C2%A0%3D%C2%A0cur%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0cur%C2%A0%3D%C2%A0sum%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0cur%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%7D%3B%0A%60%60%60%0A%23%23%23%23%23%23%20%E8%A7%A3%E6%B3%952.%E8%87%AA%E4%B8%8A%E5%90%91%E4%B8%8B%20%E5%B8%A6%E5%A4%87%E5%BF%98%E5%BD%95%E7%9A%84%E9%80%92%E5%BD%92%0A%0A**%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E9%80%9A%E8%BF%87%E9%80%92%E5%BD%92%E8%A7%A3%E5%86%B3%EF%BC%8C%E4%BD%86%E8%BF%99%E4%B8%AA%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%AD%98%E5%9C%A8%E7%9D%80%E5%A4%A7%E9%87%8F%E9%87%8D%E5%8F%A0%E5%AD%90%E9%97%AE%E9%A2%98%EF%BC%8C%E5%9B%A0%E6%AD%A4%E7%94%A8%E5%A4%87%E5%BF%98%E5%BD%95%E5%AD%98%E5%82%A8%E9%87%8D%E5%8F%A0%E7%9A%84%E5%AD%90%E9%97%AE%E9%A2%98%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E8%AE%A1%E7%AE%97**%0A%0A%60%60%60%0A%20%20%20%20int%C2%A0fib(int%C2%A0N)%C2%A0%7B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0vector%3Cint%3E%C2%A0memo(N%2B1%2C%C2%A00)%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0helper(memo%2C%C2%A0N)%3B%0A%20%20%20%20%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0int%C2%A0helper(vector%3Cint%3E%26%C2%A0memo%2C%C2%A0int%C2%A0N)%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(N%C2%A0%3D%3D%C2%A00)%C2%A0return%C2%A00%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(N%C2%A0%3D%3D%C2%A01)%C2%A0return%C2%A01%3B%0A%20%20%20%20%20%20%20%20%2F%2F%20%E5%A6%82%E6%9E%9C%E5%A4%87%E5%BF%98%E5%BD%95%E4%B8%AD%E5%AD%98%E5%82%A8%EF%BC%8C%20%E5%B0%B1%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9E%E5%A4%87%E5%BF%98%E5%BD%95%E7%9A%84%E5%80%BC%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if(memo%5BN%5D%C2%A0!%3D%C2%A00)%C2%A0return%C2%A0memo%5BN%5D%3B%0A%20%20%20%20%20%20%20%20%2F%2F%20%E5%90%A6%E5%88%99%E8%AE%B0%E5%BD%95%E5%9C%A8%E5%A4%87%E5%BF%98%E5%BD%95%E4%B8%AD%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0memo%5BN%5D%C2%A0%3D%C2%A0helper(memo%2C%C2%A0N-1)%C2%A0%2B%C2%A0helper(memo%2C%C2%A0N-2)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0return%C2%A0memo%5BN%5D%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%60%60%60%0A</center></span>
+</div></body></html> 
